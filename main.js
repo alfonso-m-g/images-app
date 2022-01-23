@@ -1,3 +1,17 @@
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+          "body").style.visibility = "hidden";
+        document.querySelector(
+          "#loader").style.visibility = "visible";
+    } else {
+        document.querySelector(
+          "#loader").style.display = "none";
+        document.querySelector(
+          "body").style.visibility = "visible";
+    }
+};
+
 let string = "";
 let frases = [ 
               "alfonso",
@@ -24,7 +38,7 @@ let frases = [
             ];
 
 for (i=1; i<=21; i++){
-    string = string + "<div class='item' id='" + i + "'><img src='/images/" + i + ".jpg' alt='te amo'><h3>" + frases[i-1] + "</h3></div>";
+    string = string + "<div class='item' id='" + i + "'><img src='./images/" + i + ".jpg' alt='te amo'><h3>" + frases[i-1] + "</h3></div>";
 }
 
 document.getElementById("place-pic").innerHTML = string;
@@ -45,23 +59,21 @@ function accion()
         exec_count = exec_count_storage;
     }
 
-    console.log(value);
-    console.log(exec_count);
     scroll(0,0);
     let num=1;
 
     const timeValue = setInterval(function(){ 
             if(value == 'false'){
-                document.getElementById(num).innerHTML = "<img src='/images/wola.png'></img>";
+                document.getElementById(num).innerHTML = "<img src='./images/wola.png'></img>";
             }
 
             if(value == 'true'){
                 if(exec_count % 2 == 1){
-                    document.getElementById(num).innerHTML = "<img src='/images/" + num + ".jpg'></img>";
+                    document.getElementById(num).innerHTML = "<img src='./images/" + num + ".jpg'></img>";
                 }
 
                 if (exec_count % 2 == 0){
-                    document.getElementById(num).innerHTML = "<img src='/images/wola.png'></img>";
+                    document.getElementById(num).innerHTML = "<img src='./images/wola.png'></img>";
                 }
             }
 
