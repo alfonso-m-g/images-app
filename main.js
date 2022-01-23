@@ -24,7 +24,7 @@ let frases = [
             ];
 
 for (i=1; i<=21; i++){
-    string = string + "<div class='item' id='" + i + "'><img src='/images/" + i + ".JPG' alt='te amo'><h3>" + frases[i-1] + "</h3></div>";
+    string = string + "<div class='item' id='" + i + "'><img src='/images/" + i + ".jpg' alt='te amo'><h3>" + frases[i-1] + "</h3></div>";
 }
 
 document.getElementById("place-pic").innerHTML = string;
