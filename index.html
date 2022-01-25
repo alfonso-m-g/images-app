@@ -8,20 +8,55 @@
    </head>
    <body>
       <section>
-         <div class="container">
-            <div class="header">
-               <h1 class="logo">Pachi & Ratón</h1>
-               <div id="loader" class="centerx"></div>
-            </div>
-            <div class="gallery" id="place-pic"></div>
-            <div class="containerx">
-               <div class="center">
-                  <br><br><br><br>
-                  <div id="loading"><button class="btn" onclick="accion()">Click me</button></div>
-               </div>
-            </div>
-         </div>
-         </div>
+         <table style="width:100%">
+            <tr>
+               <td>
+                  <div class="container">
+                     <div class="header">
+                        <h1 class="logo">Pachi & Ratón</h1>
+                        <div id="loader" class="centerx"></div>
+                     </div>
+                     <div class="gallery" id="place-pic"></div>
+                     <div class="containerx">
+                        <div class="center">
+                           <br><br><br><br>
+                           <div id="loading"><button class="btn" onclick="accion()">Click me</button></div>
+                        </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="container">
+                     <table style="width:100%">
+                        <tr>
+                           <td>
+                              <div class="container-other">
+                                 <div class="inputs">
+                                    <div class="brand-title">Create new comment</div>
+                                    <br>
+                                    <label>Name</label>
+                                    <input type="text" name="name" placeholder="name">
+                                    <label>Comment</label>
+                                    <input type="text" name="comment" placeholder="comentario">
+                                    <button onclick="POST()">POST</button>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="container-other">
+                                 Comments section
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </table>
       </section>
       <script src="main.js"></script>
    </body>
