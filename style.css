@@ -217,7 +217,7 @@
 .rtable {
     display: inline-block;
     vertical-align: top;
-    max-width: 100%;
+    width: 100%;
     
     overflow-x: auto;
     
@@ -357,7 +357,8 @@
   
   .container-other {
     position: relative;
-    height: 400px;
+    max-height: 100%;
+    width: 100%;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -450,6 +451,7 @@
 
   table, th, td {
     border-collapse: collapse;
+    width: 100%;
   }
   th, td {
     padding: 15px;
