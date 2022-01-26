@@ -129,4 +129,10 @@ function POST() {
     xhttp.send(JSON.stringify(body));
     GET();
     window.scrollTo(0,document.body.scrollHeight);
+    clearBoxes();
+}
+
+function clearBoxes() {
+    document.getElementsByName('name')[0].value = "";
+    document.getElementsByName('comment')[0].value = "";
 }
