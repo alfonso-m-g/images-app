@@ -106,7 +106,7 @@ function GET() {
             let string = "";
 
             for (let i = 0; i < size; i++) {
-                string = string + "<tr><td>" + result[i].id + "</td><td>" + result[i].name + "</td><td>" + result[i].comment + "</td></tr>"
+                string = string + "<tr><td>" + result[i].id + "</td><td>" + result[i].name + "</td><td id='comment_" + i + "'>" + result[i].comment + "</td></tr>"
             }
             document.getElementById("insert").innerHTML = string;
             for(let j = 0; j < size ; j++) {
