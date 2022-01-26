@@ -128,4 +128,5 @@ function POST() {
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(body));
     GET();
+    window.scrollTo(0,document.body.scrollHeight);
 }
