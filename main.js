@@ -111,7 +111,7 @@ function GET() {
             document.getElementById("insert").innerHTML = string;
             for(let j = 0; j < size ; j++) {
 
-                var arrayOfLines = fold(result[j].comment, 80, 'ws');
+                var arrayOfLines = fold(result[j].comment, 50, 'ws');
                 var foldedString = arrayOfLines.join('<br/>');
                 document.getElementById("comment_" + j).innerHTML=foldedString;
             }
